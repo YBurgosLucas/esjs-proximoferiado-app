@@ -30,9 +30,10 @@ asincrono funcion mostrarProximoFeriado() {
     const proximoFeriado = calcularProximoFeriado(feriados);
     
     si (proximoFeriado) {
-        Terminal.escribir("Se encontraron feriado proximo: ")     
+        Terminal.escribir("Se encontraron feriado proximo: ")  
+        Terminal.escribir(proximoFeriado.nombre); 
         Terminal.escribir(proximoFeriado.fecha);
-        Terminal.escribir(proximoFeriado.nombre);
+       
     } sino {
         Terminal.escribir('no se encontraron feriados proximos');
     }
